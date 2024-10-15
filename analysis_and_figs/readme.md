@@ -1,0 +1,6 @@
+This folder contains scripts for all figures, linear models, and statistical analysis, as well as a copy of the fully processed logger data with in situ and remotely sensed temperature metrics in .csv form. 
+The logger data is divided into "testing" and "training" data from an earlier version of this analysis, but the files get combined within the scripts. 
+
+figures.py can be used to recreate all of the figures in the manuscript and supplementary material.
+linear models.py can be used to run linear and random forest models relating various types of remotely sensed data to in situ temperature metrics. This can be used to recreate the models detailed in the supplementary material, or experiment with different combinations of variables.
+KruskallWallis and misc.py can be used to recreate the Kruskal-Wallis tests, linear correlations, and summary statistics described in the manuscript. 
