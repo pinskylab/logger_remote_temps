@@ -1,0 +1,6 @@
+This directory contains scripts to process remotely sensed ocean temperature data from NASA/JPL. The data is hosted on a NASA server in .zarr format
+The scripts in this directory should be run after the scripts in the logger_processing directory. They should be run in the order:
+
+1) SST.py
+2) peak_temp.py
+3) weekly_diff.py
