@@ -10,3 +10,4 @@ Each script named with a region or data source (AIMS, Dongsha, Kiritimati, NOAA/
     
 shoredist_merge.py takes formatted .csv files as input. This script calculates distance to shore in meters from OpenStreetMap data (downloaded 10 March 2023) for each point. 
 It then aggregates all of the data into two files: training\_temps.csv and testing\_temps.csv. These files can be used to get sea surface temperature data from the NASA server, then used for model fitting.
+The 'testing' and 'training' format is an artifact of an earlier version of this study. All of the points are combined into a single dataset at the analysis stage. 
