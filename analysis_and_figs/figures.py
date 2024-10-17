@@ -42,22 +42,22 @@ all_dat = all_dat.reset_index(drop=True)
 all_dat['Q99_DIFF'] = all_dat['Q99'] - all_dat['SST_MAX']
 
 '''
-Map loggers
+Figure 1A
 '''
 fig= plt.figure(figsize=(11,8.5))
 proj = ccrs.PlateCarree(central_longitude =180)
 ax = plt.subplot(1,1,1,projection=proj)
 ax.set_extent((-90,130,-40,40),crs=proj)
-ax.set_title("Coral Reef Temperature Logger Records")
 ax.coastlines()
 ax.stock_img()
 ax.scatter(test_dat['LONGITUDE'],test_dat['LATITUDE'],c='darkorange',marker='2',transform=ccrs.Geodetic())
 ax.scatter(train_dat['LONGITUDE'],train_dat['LATITUDE'],c='darkorange',marker='2',transform=ccrs.Geodetic())
 gl = ax.gridlines(draw_labels=True)
+ax.text(0.05, 0.95, 'A)', transform=ax.transAxes, fontsize=28, fontweight='bold', va='top')
 fig.savefig(fig_path + 'logger_map.png',transparent=False,bbox_inches='tight',dpi=2400)
 
 '''
-Heatmap of loggers by year
+Figure 1B
 '''
 all_dat['REGION'] =all_dat['REGION'].astype('category')
 
@@ -80,6 +80,8 @@ cbar.ax.tick_params(labelsize=21)
 
 plt.xlabel('Year', fontsize=21)
 plt.ylabel('Region', fontsize=21)
+ax.text(0.05, 0.95, 'B)', transform=ax.transAxes, fontsize=48, fontweight='bold', va='top')
+
 fig.savefig( fig_path +'logger_heatmap.png',transparent=False,bbox_inches='tight',dpi=1200)
 
 '''
