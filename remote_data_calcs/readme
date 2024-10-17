@@ -4,3 +4,10 @@ The scripts in this directory should be run after the scripts in the logger_proc
 1) SST.py
 2) peak_temp.py
 3) weekly_diff.py
+
+Scripts in this directory require the following libraries:
+dask 2022.4.0\
+numba 0.56.4\
+numpy 1.23.5\
+pandas 1.4.2\
+xarray 2023.1.0
