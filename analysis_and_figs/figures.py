@@ -82,7 +82,7 @@ plt.xlabel('Year', fontsize=21)
 plt.ylabel('Region', fontsize=21)
 ax.text(0.05, 0.95, 'b)', transform=ax.transAxes, fontsize=48, fontweight='bold', va='top')
 
-fig.savefig( fig_path +'figure_1b.tiff',transparent=False,bbox_inches='tight',dpi=1200)
+fig.savefig( fig_path +'Figure1b.tiff',transparent=False,bbox_inches='tight',dpi=1200)
 
 '''
 Figure 2
