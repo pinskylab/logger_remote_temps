@@ -12,6 +12,8 @@ shoredist_merge.py takes formatted .csv files as input. This script calculates d
 It then aggregates all of the data into two files: training\_temps.csv and testing\_temps.csv. These files can be used to get sea surface temperature data from the NASA server, then used for model fitting.
 The 'testing' and 'training' format is an artifact of an earlier version of this study. All of the points are combined into a single dataset at the analysis stage. 
 
+OpenStreetMap coastlines data can be downloaded from https://osmdata.openstreetmap.de/data/coastlines.html. OpenStreetMap data is available under an OpenDatabaseLicense, ODbL 1.0. For more information see https://osmfoundation.org/wiki/Licence
+
 Scripts in this directory require the following libraries:\
 numpy 1.23.5\
 pandas 1.4.2\
