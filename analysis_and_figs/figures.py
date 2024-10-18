@@ -53,8 +53,8 @@ ax.stock_img()
 ax.scatter(test_dat['LONGITUDE'],test_dat['LATITUDE'],c='darkorange',marker='2',transform=ccrs.Geodetic())
 ax.scatter(train_dat['LONGITUDE'],train_dat['LATITUDE'],c='darkorange',marker='2',transform=ccrs.Geodetic())
 gl = ax.gridlines(draw_labels=True)
-ax.text(0.05, 0.95, 'A)', transform=ax.transAxes, fontsize=28, fontweight='bold', va='top')
-fig.savefig(fig_path + 'logger_map.png',transparent=False,bbox_inches='tight',dpi=2400)
+ax.text(0.05, 0.95, 'a)', transform=ax.transAxes, fontsize=28, fontweight='bold', va='top')
+fig.savefig(fig_path + 'Figure1a.tiff',transparent=False,bbox_inches='tight',dpi=2400)
 
 '''
 Figure 1B
@@ -80,9 +80,9 @@ cbar.ax.tick_params(labelsize=21)
 
 plt.xlabel('Year', fontsize=21)
 plt.ylabel('Region', fontsize=21)
-ax.text(0.05, 0.95, 'B)', transform=ax.transAxes, fontsize=48, fontweight='bold', va='top')
+ax.text(0.05, 0.95, 'b)', transform=ax.transAxes, fontsize=48, fontweight='bold', va='top')
 
-fig.savefig( fig_path +'logger_heatmap.png',transparent=False,bbox_inches='tight',dpi=1200)
+fig.savefig( fig_path +'figure_1b.tiff',transparent=False,bbox_inches='tight',dpi=1200)
 
 '''
 Figure 2
@@ -114,7 +114,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # --- Panel B: Histogram (In situ - Remote MMM) ---
 axes[1].hist(all_dat['SST_DIFF'], bins=20, color='skyblue', edgecolor='black')
@@ -128,11 +128,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig(fig_path + 'Figure2.png', transparent=False, bbox_inches='tight', dpi=1200)
+plt.savefig(fig_path + 'Figure2.tiff', transparent=False, bbox_inches='tight', dpi=1200)
 
 '''
 Figure 3
@@ -157,7 +157,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # --- Panel B: Boxplot and Stripplot (Geomorphic class vs In situ - Remote MMM) ---
 boxes = sns.boxplot(y='SST_DIFF', x='RCLASS', data=all_dat, order=rclass_ord, dodge=False, boxprops={'facecolor': 'None'}, showfliers=False, showcaps=False, whiskerprops={'linewidth': 0}, ax=axes[1])
@@ -176,11 +176,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig(fig_path + 'Figure3.png', transparent=False, bbox_inches='tight', dpi=1200)
+plt.savefig(fig_path + 'Figure3.tiff', transparent=False, bbox_inches='tight', dpi=1200)
 
 '''
 Figure 4
@@ -208,7 +208,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # --- Panel B: Histogram (In situ - Remote MMM) ---
 axes[1].hist(all_dat['Q99_DIFF'], bins=20, color='skyblue', edgecolor='black')
@@ -222,11 +222,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig(fig_path + 'Figure4.png', transparent=False, bbox_inches='tight', dpi=1200)
+plt.savefig(fig_path + 'Figure4.tiff', transparent=False, bbox_inches='tight', dpi=1200)
 
 '''
 Figure 5
@@ -247,7 +247,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # --- Panel B: Boxplot and Stripplot (Geomorphic class vs In situ - Remote MMM) ---
 boxes = sns.boxplot(y='Q99_DIFF', x='RCLASS', data=all_dat, order=rclass_ord, dodge=False, boxprops={'facecolor': 'None'}, showfliers=False, showcaps=False, whiskerprops={'linewidth': 0}, ax=axes[1])
@@ -266,11 +266,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig(fig_path + 'Figure5.png', transparent=False, bbox_inches='tight', dpi=1200)
+plt.savefig(fig_path + 'Figure5.tiff', transparent=False, bbox_inches='tight', dpi=1200)
 
 '''
 Supplemental figure 1
@@ -292,7 +292,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 scat1 = sns.scatterplot(x = 'SHOREDIST', y = 'SST_DIFF', hue = 'TEMP_C', data= all_dat,palette='viridis', ax=axes[1],s=90)
 axes[1].legend(title = "In situ MMM °C",fontsize=18,title_fontsize=18)
@@ -306,11 +306,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig( fig_path + 'Supplemental1.png',transparent=False,bbox_inches='tight',dpi=1200)
+plt.savefig( fig_path + 'Supplemental1.tiff',transparent=False,bbox_inches='tight',dpi=1200)
 
 '''
 Supplemental figure 2
@@ -330,7 +330,7 @@ axes[0].spines['top'].set_visible(False)
 axes[0].spines['right'].set_visible(False)
 
 # Add panel label A
-axes[0].text(0.05, 0.95, 'A)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[0].text(0.05, 0.95, 'a)', transform=axes[0].transAxes, fontsize=32, fontweight='bold', va='top')
 
 scat1 = sns.scatterplot(x = 'SHOREDIST', y = 'Q99_DIFF', hue = 'Q99', data= all_dat,palette='viridis', ax=axes[1],s=90)
 axes[1].legend(title = "In situ peak temp °C",fontsize=14,title_fontsize=14)
@@ -344,11 +344,11 @@ axes[1].spines['top'].set_visible(False)
 axes[1].spines['right'].set_visible(False)
 
 # Add panel label B
-axes[1].text(0.05, 0.95, 'B)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
+axes[1].text(0.05, 0.95, 'b)', transform=axes[1].transAxes, fontsize=32, fontweight='bold', va='top')
 
 # Adjust layout and save
 plt.tight_layout()
-plt.savefig( fig_path + 'Supplemental2.png',transparent=False,bbox_inches='tight',dpi=1200)
+plt.savefig( fig_path + 'Supplemental2.tiff',transparent=False,bbox_inches='tight',dpi=1200)
 
 '''
 Supplemental figure 3
@@ -365,4 +365,4 @@ boxes.tick_params(axis='y',labelsize=12)
 boxes.spines['top'].set_visible(False)
 boxes.spines['right'].set_visible(False)
 
-boxes.figure.savefig(fig_path + 'Supplemental3.png',transparent=False,bbox_inches='tight',dpi=1200)
+boxes.figure.savefig(fig_path + 'Supplemental3.tiff',transparent=False,bbox_inches='tight',dpi=1200)
